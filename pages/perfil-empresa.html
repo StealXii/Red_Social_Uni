@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/animaciones.css">
+    <link rel="stylesheet" href="../assets/css/popups.css">
+</head>
+
+<body>
+<header>
+    <div class="row">
+        <div class="logo circle" onclick="window.location.href='../pages/home.html'"></div>
+        <nav>
+            <div class="col-3">
+                <a href="../pages/perfil-profesional.html"
+                   class="button">Mi Perfil</a>
+            </div>
+            <div class="double-col-3 search-container">
+                <form action="../pages/resultados.html"
+                      style="display: flex">
+                    <input type="text"
+                           placeholder="Buscar..."
+                           name="search">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Cabecera del perfil -->
+<div class="barra-cabecera">
+    <div class="contenedor-cabecera">
+        <div class="w-1/4">
+            <div class="absolute -mt-24 ml-20 mr-6"><img src="../assets/images/perfil.png" alt="logo"
+                                                         onclick="abrirPopUp('overlay13', 'popup13')"
+                                                         class="imagen-perfil"></div>
+        </div>
+        <div class="informacion-contacto ml-64">
+            <div class="nombre-elemento">Universidad de Córdoba</div>
+            <div class="descripcion-elemento">Córdoba, Córdoba</div>
+        </div>
+        <!-- <div class="mr-20"><button>Conectar</button></div> -->
+    </div>
+</div>
+
+<!-- Información del perfil -->
+<div class="container mx-auto flex flex-row mt-3 text-sm leading-normal">
+    <!-- Columna izquierda -->
+    <div class="w-full lg:w-1/4 lg:pl-0 pr-6 mr-6 mt-8 mb-4">
+        <!-- información de contacto -->
+        <div class="caja">
+            <div class="titulo-caja">Información de contacto</div>
+            <table border="0" width="95%" height="auto">
+                <tr>
+                    <td><span class="nombre-elemento">País</span></td>
+                    <td><span class="descripcion-elemento">España</span></td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Comunidad</span></td>
+                    <td><span class="descripcion-elemento">Andalucía</span></td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Ciudad</span></td>
+                    <td><span class="descripcion-elemento">Córdoba, Córdoba</span></td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Dirección</span></td>
+                    <td><span class="descripcion-elemento">Avd. Medina Azahara s/n Córdoba, Córdoba 14071, ES</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Correo electrónico</span></td>
+                    <td><a href="mailto:sg@uco.es" class="descripcion-elemento">sg@uco.es</a></td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Teléfono</span></td>
+                    <td><span class="descripcion-elemento">(+34)957218000</span></td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Sitio web</span></td>
+                    <td><a href="http://www.uco.es/" class="descripcion-elemento">uco.es</a></td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Twitter</span></td>
+                    <td><a href="https://twitter.com/Univcordoba" class="descripcion-elemento">Univcordoba</a></td>
+                </tr>
+                <tr>
+                    <td><span class="nombre-elemento">Linkedin</span></td>
+                    <td><a href="https://www.linkedin.com/school/universidad-de-cordoba/" class="descripcion-elemento">universidad-de-cordoba</a>
+                    </td>
+                </tr>
+            </table>
+            <div class="accion-caja"><a href="#" class="enlace-pu" onclick="abrirPopUp('overlay9', 'popup9')">Editar</a>
+            </div>
+        </div>
+        <!-- Contactos -->
+        <div class="caja">
+            <div class="titulo-caja">Contactos</div>
+            <!-- Elemento contacto -->
+            <div class="elemento-caja">
+                <div class="py-2"><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" alt="avatar"
+                                                                           class="imagen-contacto"></a></div>
+                <div class="informacion-contacto">
+                    <div><a href="./perfil-profesional.html" class="nombre-elemento">Pedro Sánchez</a></div>
+                    <div class="descripcion-elemento"> Presidente del Gobierno y secretario general del PSOE</div>
+                </div>
+            </div>
+            <!-- Elemento contacto -->
+            <div class="elemento-caja">
+                <div class="py-2"><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" alt="avatar"
+                                                                           class="imagen-contacto"></a></div>
+                <div class="informacion-contacto">
+                    <div><a href="./perfil-profesional.html" class="nombre-elemento">Pablo Casado</a></div>
+                    <div class="descripcion-elemento">Presidente del Partido Popular</div>
+                </div>
+            </div>
+            <!-- Elemento contacto -->
+            <div class="elemento-caja">
+                <div class="py-2"><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" alt="avatar"
+                                                                           class="imagen-contacto"></a></div>
+                <div class="informacion-contacto">
+                    <div><a href="./perfil-profesional.html" class="nombre-elemento">Santiago Abascal Conde</a></div>
+                    <div class="descripcion-elemento">Presidente de Vox</div>
+                </div>
+            </div>
+            <!-- Elemento contacto -->
+            <div class="elemento-caja">
+                <div class="py-2"><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" alt="avatar"
+                                                                           class="imagen-contacto"></a></div>
+                <div class="informacion-contacto">
+                    <div><a href="./perfil-profesional.html" class="nombre-elemento">Pablo Iglesias</a></div>
+                    <div class="descripcion-elemento">Secretario general de Podemos</div>
+                </div>
+            </div>
+            <!-- Elemento contacto -->
+            <div class="elemento-caja">
+                <div class="py-2"><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" alt="avatar"
+                                                                           class="imagen-contacto"></a></div>
+                <div class="informacion-contacto">
+                    <div><a href="./perfil-profesional.html" class="nombre-elemento">Inés Arrimadas</a></div>
+                    <div class="descripcion-elemento">Portavoz de Ciudadanos en el Congreso de los Diputados</div>
+                </div>
+            </div>
+            <!-- Ver más contactos -->
+            <div class="accion-caja"><a href="resultados.html" class="enlace-pu">Ver más</a></div>
+        </div>
+    </div>
+
+    <!-- Columna central -->
+    <div class="w-full lg:w-1/2 mb-4">
+        <!-- Sobre nosotros -->
+        <div class="caja">
+            <div class="titulo-caja">SOBRE NOSOTROS</div>
+            <div class="elemento-caja">
+                <p>Somos una de las instituciones científicas y educativas de mayor prestigio nacional, con una amplia
+                    oferta de títulos de grado y postgrado. Lideramos @cei_A3</p>
+            </div>
+            <!-- Añadir información personal -->
+            <div class="accion-caja"><a href="#" class="enlace-pu" onclick="abrirPopUp('overlay', 'popup')">Editar</a>
+            </div>
+        </div>
+
+        <!-- Artículos -->
+        <div class="caja">
+            <div class="titulo-caja">ARTÍCULOS Y NOTICIAS</div>
+            <!-- Elemento artículo -->
+            <div class="elemento-caja">
+                <div>
+                    <div class="py-2 w-full">
+                        <div class="flex justify-between">
+                            <div>
+                                <a href="http://www.uco.es/investigacion/ucci/es/noticias-gen/item/2729-en-busca-de-los-mecanismos-que-explican-la-ansiedad"
+                                   class="nombre-elemento" target="_blank">En busca de los mecanismos que explican la
+                                    ansiedad</a></div>
+                            <div><a href="#" class="enlace-pu" onclick="abrirPopUp('overlay3', 'popup3')">Editar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Una investigadora de la Universidad de Córdoba analiza cómo las creencias metacognitivas y la
+                        desregulación emocional determinan los síntomas del Trastorno de Ansiedad Generalizada
+                        (TAG). </p>
+                </div>
+            </div>
+            <!-- Elemento artículo -->
+            <div class="elemento-caja">
+                <div>
+                    <div class="py-2 w-full">
+                        <div class="flex justify-between">
+                            <div>
+                                <a href="http://www.uco.es/investigacion/ucci/es/noticias-gen/item/2720-la-investigadora-aurora-ramirez-recibe-uno-de-los-premios-de-investigacion-de-la-sociedad-cientifica-informatica-de-espana"
+                                   class="nombre-elemento">La investigadora Aurora Ramírez recibe uno de los Premios
+                                    ...</a></div>
+                            <div><a href="#" class="enlace-pu" onclick="abrirPopUp('overlay3', 'popup3')">Editar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Aurora Ramírez, doctora por la UCO, ha sido galardonada en la categoría de Jóvenes Investigadores
+                        por su destacada contribución científica en el ámbito de la Ingeniería de Software aplicando
+                        Inteligencia Artificial. </p>
+                </div>
+            </div>
+            <div class="accion-caja">
+                <a href="#" class="enlace-pu" onclick="abrirPopUp('overlay2', 'popup2')">Añadir</a>
+                &nbsp; &nbsp;
+                <a href="resultados.html" class="enlace-pu">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Trabajadores -->
+        <div class="caja">
+            <div class="titulo-caja">TRABAJADORES</div>
+            <!-- Elemento artículo -->
+            <div>
+                <div class="elemento-caja">
+                    <table border="0" width="95%" height="auto">
+                        <tr>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                            <td>
+                                <center><a href="./perfil-profesional.html"><img src="../assets/images/perfil.png" border="0"
+                                                                                 class="imagen-contacto"></a></center>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Ver trabajadores -->
+                <div class="accion-caja"><a href="resultados.html" class="enlace-pu">Ver más</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- POP-UPS -->
+<!-- POP-UPS  Información Personalizada-->
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup" onclick="cerrarPopUp('overlay', 'popup')"><i
+                class="fas fa-times"></i></a>
+        <h3>Editar información personalizada</h3>
+        <form action="">
+            <div class="contenedor-inputs">
+                <textarea name="textarea" placeholder="Editar información personalizada" rows="10" cols="50"></textarea>
+
+            </div>
+            <!--<Hemos puesto la función de cerrar popups hasta que se tenga la función>-->
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay', 'popup')">Volver</button>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay', 'popup')">Aceptar</button>
+
+        </form>
+    </div>
+</div>
+<!-- POP-UPS  Fin Información Personalizada-->
+<!-- POP-UPS  Añadir Artículo-->
+<div class="overlay" id="overlay2">
+    <div class="popup" id="popup2">
+        <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup" onclick="cerrarPopUp('overlay2', 'popup2')"><i
+                class="fas fa-times"></i></a>
+        <h3>Añadir Articulo</h3>
+        <form action="">
+            <div class="contenedor-inputs">
+                <input type="text" placeholder="Titulo">
+                <textarea name="textarea" placeholder="Mensaje" rows="10" cols="50"></textarea>
+            </div>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay2', 'popup2')">Volver</button>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay2', 'popup2')">Aceptar</button>
+        </form>
+    </div>
+</div>
+
+<!-- POP-UPS Fin Añadir Artículo-->
+<!-- POP-UPS  Editar Artículo-->
+<div class="overlay" id="overlay3">
+    <div class="popup" id="popup3">
+        <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup" onclick="cerrarPopUp('overlay3', 'popup3')"><i
+                class="fas fa-times"></i></a>
+        <h3>Editar Articulo</h3>
+        <form action="">
+            <div class="contenedor-inputs">
+                <input type="text" placeholder="Titulo">
+                <textarea name="textarea" placeholder="Mensaje" rows="10" cols="50"></textarea>
+            </div>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay3', 'popup3')">Volver</button>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay3', 'popup3')">Aceptar</button>
+        </form>
+    </div>
+</div>
+<!-- POP-UPS  Fin Editar Artículo-->
+<!-- POP-UPS  Editar informacio de Contacto-->
+<div class="overlay" id="overlay9">
+    <div class="popup" id="popup9">
+        <a href="#" id="btn-cerrar-popup9" class="btn-cerrar-popup" onclick="cerrarPopUp('overlay9', 'popup9')"><i
+                class="fas fa-times"></i></a>
+        <h3>Editar información de contacto</h3>
+        <form action="">
+            <div class="contenedor-inputs">
+
+                <input type="text" placeholder="País">
+                <input type="text" placeholder="Comunidad">
+                <input type="text" placeholder="Ciudad">
+                <input type="text" placeholder="Dirección">
+                <input type="text" placeholder="Correo Electrónico">
+                <input type="text" placeholder="Teléfono">
+                <h4>Redes sociales</h4>
+                <input type="text" placeholder="Enlace Twitter">
+                <input type="text" placeholder="Enlace Linkedin">
+                <input type="text" placeholder="Sitio Web">
+            </div>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay9', 'popup9')">Volver</button>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay9', 'popup9')">Aceptar</button>
+        </form>
+    </div>
+</div>
+<!-- POP-UPS Fin  Editar informacio de Contacto-->
+<!-- POP-UPS  Editar Foto-->
+<div class="overlay" id="overlay13">
+    <div class="popup" id="popup13">
+        <a href="#" id="btn-cerrar-popup13" class="btn-cerrar-popup" onclick="cerrarPopUp('overlay13', 'popup13')"><i
+                class="fas fa-times"></i></a>
+        <h3>Editar Foto</h3>
+        <a href="#"><img src="../assets/images/perfil.png" alt="avatar"></a>
+        <form action="">
+            <h4>Seleccione la foto de perfil</h4>
+            <div class="contenedor-2">
+                <input type="file" name="archivosubido">
+            </div>
+            <!--<Hemos puesto la función de cerrar popups hasta que se tenga la función>-->
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay13', 'popup13')">Volver</button>
+            <button type="submit" class="btn-submit" onclick="cerrarPopUp('overlay13', 'popup13')">Aceptar</button>
+
+        </form>
+    </div>
+</div>
+<!-- POP-UPS  Fin Editar Foto-->
+<script src="../assets/js/popup.js"></script>
+<!-- Fin POP-UPS -->
+<footer>
+    <div class="row">
+        <div class="col-3">
+            <a href="../static/about.html" class="button">Sobre nosotros</a>
+        </div>
+        <div class="col-3">
+            <a href="../static/terminos.html" class="button">Términos y condiciones de uso</a>
+        </div>
+        <div class="col-3">
+            <a href="../static/privacidad.html" class="button">Política de privacidad</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
